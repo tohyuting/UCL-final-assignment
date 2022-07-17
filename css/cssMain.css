@@ -1,0 +1,22 @@
+/* css file */
+
+#container {
+color: navy;
+font-size: 16px;
+}
+
+#header { background-color: red; }
+
+#contactTable {
+	width: 50%;
+}
+
+#contactTable td {
+	height: 25px;
+
+}
+form { border: dotted thin red; }
+
+#age, #newdate { border: none; }
+
+#footer { height: 50px; }

@@ -14,6 +14,7 @@ echo "<script>alert('$name')</script>";
 echo "<script>alert('$lname')</script>";
 echo "<script>alert('$dob')</script>";
 
+
 include("php_connect/DB_connect.php");
 
 //constrain the result to the user details just uploaded 

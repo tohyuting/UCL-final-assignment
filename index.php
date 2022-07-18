@@ -15,7 +15,7 @@ include("php_connect/DB_connect.php");
 $(document).ready(function(){
 	$("tr:odd").css("background-color", "#EFF1F1");
 	$("#navBack").click(function() { location.href = 'registrationPage.php' });
-	
+	$("#payFees").click(function() {location.href = 'feesPage.php'});
 }); 
 </script>
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	<td></td>
   </tr>
   <tr>
-    <td></td>
+    <td><button type="button" id="payFees">Pay your fees</button></td>
     <td></td>
 
   </tr>

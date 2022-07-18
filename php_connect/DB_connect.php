@@ -23,7 +23,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-echo "connected<hr>";
+// DEBUG: to check if the database is connected successfully
+echo "<script>console.log('connected')</script>";
 /*exit;
 // connection is good so
 // run your query

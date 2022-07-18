@@ -1,5 +1,4 @@
 <?php
-
 require('../php_connect/DB_connect.php');
 
 //grab postdat values for creating user row
@@ -41,9 +40,9 @@ $result = $conn->query($query);
 while ($row = $result->fetch_row()) {
     $user_Id = $row[0];
 }
-
+echo "<script>alert('in php')</script>";
 //if all ok load the address page with the user ID as post data
-header("Location:../registrationPage2.php?user_Id=".$user_Id);	
+header("Location:../registrationPage.php");	
 //else throw an error
 } else { echo "Error: ".$sql."<br>".$conn->error; }
 

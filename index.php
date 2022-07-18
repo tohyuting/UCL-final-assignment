@@ -1,10 +1,5 @@
 <?php
-
-//$test = "hello world";
-//echo $test."<hr>";
-
 include("php_connect/DB_connect.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -12,16 +7,12 @@ include("php_connect/DB_connect.php");
 <head>
 <meta charset="utf-8">
 <title>Summer school web exercise</title>
-	
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <script src="js/jquery_lib.js"></script>
 
 
 <script>
 $(document).ready(function(){
-	
-	 /*-console.log( "ready! I tell you" );
-	$("tr:even").click(function() { alert("hi you") });*/
 	$("tr:odd").css("background-color", "#EFF1F1");
 	$("#navBack").click(function() { location.href = 'registrationPage.php' });
 	

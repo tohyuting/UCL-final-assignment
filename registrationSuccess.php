@@ -1,10 +1,18 @@
 <?php
-
+session_start();
 $user_Id = $_REQUEST['user_Id'];
 
 if(isset($_REQUEST['message'])){
 $message = $_REQUEST['message'];
 } else { $message = "Address added"; }
+
+//DEBUG PRINTS
+$name = $_SESSION["firstName"];
+$lname = $_SESSION["lastName"];
+$dob = $_SESSION["dob"];
+echo "<script>alert('$name')</script>";
+echo "<script>alert('$lname')</script>";
+echo "<script>alert('$dob')</script>";
 
 include("php_connect/DB_connect.php");
 

@@ -1,13 +1,51 @@
 <?php
-
+session_start();
 require('../php_connect/DB_connect.php');
+// to find the largest value in the database now
+$firstName = $_SESSION['firstName'];
+$lastName = $_SESSION['lastName'];
+$dob = $_SESSION['dob'];
+$phpdate = strtotime( $dob );
+$mysqldate = date( 'Y-m-d', $phpdate );
+$age = $_SESSION['age'];
+$phone = $_SESSION['phone'];
+$email = $_SESSION['email'];
+
+$getMaxQuery = "SELECT MAX(`user_Id`) FROM `users`";
+
+$user_Id = 0;
+$userIdResult = $conn->query($getMaxQuery);
+while ($row = $userIdResult->fetch_row()) {
+	$user_Id = $row[0];
+}
+// to generate current Id
+$user_Id = $user_Id + 1;
+
+$insertUser = "INSERT INTO `users` 
+(`user_Id`, `firstName`, `lastName`, `dob`, `age`) 
+VALUES ('$user_Id', '$firstName','$lastName','$mysqldate','$age')";
+
+if ($conn->query($insertUser) === TRUE) {
+	echo "finally";
+}
+
+$insertContact = "INSERT INTO `contactdetails` 
+(`contact_Id`, `user_Id`, `email`, `telephone`) 
+VALUES (NULL, '$user_Id','$email','$phone')";
+
+if ($conn->query($insertContact) === TRUE) {
+	echo "finally";
+}
 
 //grab postdat values for creating user row
-$user_Id = $_REQUEST['user_Id'];
 $house_numberName = $_REQUEST['house_numberName'];
 $street_name = $_REQUEST['street_name'];
 $city = $_REQUEST['city'];
 $postCode = $_REQUEST['postCode'];
+
+echo "<script>alert('$house_numberName')</script>";
+echo "<script>alert('$street_name')</script>";
+echo "<script>alert('$city')</script>";
 
 //insert the postdata into the database
 $sql = "INSERT INTO `address` 
@@ -16,29 +54,10 @@ VALUES (NULL, '$user_Id','$house_numberName','$street_name','$city','$postCode')
 
 //bug finder
 if ($conn->query($sql) === TRUE) { 
-//test for insertion if/else
-//echo "New record created successfully";
-//pause the program to make sure that the database is updated 
-sleep(0.5);	
-
-	
-//find the last user ID to carry across to the address upload php page.
-//constrain the result to the user details just uploaded 
-/*$query = "SELECT `user_Id` FROM `users` 
-WHERE `firstname`='$firstName'
-AND `lastName`='$lastName'
-AND `dob`='$mysqldate'
-ORDER BY `users`.`user_Id` DESC LIMIT 1";*/
-	
-//output data of each row
-//save the query result array in the result variable
-//$result = $conn->query($query);
-
-//loop through the array to fetch the user ID 
-/*while ($row = $result->fetch_row()) {
-    $user_Id = $row[0];
-}*/
+/*
+	sleep(0.5);	
 echo "jobs a goodun"; 
+echo "<script>alert('why')</script>";*/
 
 //if all ok load the address page with the user ID as post data
 header("Location:../registrationSuccess.php?user_Id=".$user_Id."&message=ADDRESS AND NAME LOGGED");	
@@ -47,13 +66,4 @@ header("Location:../registrationSuccess.php?user_Id=".$user_Id."&message=ADDRESS
 
 //close the database link
 $conn->close();
-
-//varible test script 
-/*echo 
-	"<hr>first name ".$firstName."<br>".
-	"last name ".$lastName."<br>".
-	"date of birth ".$dob."<br>".
-	"age ".$age,"<br>";
-
-echo "you've submitted the form";*/
 ?>

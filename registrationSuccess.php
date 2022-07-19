@@ -6,14 +6,6 @@ if(isset($_REQUEST['message'])){
 $message = $_REQUEST['message'];
 } else { $message = "Address added"; }
 
-//DEBUG PRINTS
-$name = $_SESSION["firstName"];
-$lname = $_SESSION["lastName"];
-$dob = $_SESSION["dob"];
-echo "<script>alert('$name')</script>";
-echo "<script>alert('$lname')</script>";
-echo "<script>alert('$dob')</script>";
-
 
 include("php_connect/DB_connect.php");
 
@@ -32,22 +24,7 @@ $result = mysqli_query($conn, $sql);
 	
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <script src="js/jquery_lib.js"></script>
-
-
-<script>
-$(document).ready(function(){
-	$("tr:odd").css({"background-color": "red", "color": "white"});
-	$("#navBack").click(function() { location.href = 'registrationPage.php' });
-	
-	$('#truncate').click(function(){ //alert("clicked");
-	$('#trucateTable').load("php_files/emptyTables.php");
-	});
-	$('#homeLink').click(function(){ location.href = 'index.php' });
-	$('#payment').click(function(){ location.href = 'feesPage.php' });
-	$('#return').click(function(){ location.href = 'index.php' });
-
-}); 
-</script>
+<script src="js/registrationSuccess.js"></script>
 
 </head>
 

@@ -9,15 +9,7 @@ include("php_connect/DB_connect.php");
 <title>Summer school web exercise</title>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <script src="js/jquery_lib.js"></script>
-
-
-<script>
-$(document).ready(function(){
-	$("tr:odd").css("background-color", "#EFF1F1");
-	$("#navBack").click(function() { location.href = 'registrationPage.php' });
-	$("#payFees").click(function() {location.href = 'retrieveUserId.php'});
-}); 
-</script>
+<script src="js/index.js"></script>
 
 </head>
 

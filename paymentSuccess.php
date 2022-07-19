@@ -20,7 +20,6 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>	
 <script type="text/javascript" src="js/validator.js"></script>	
-<script type="text/javascript" src="js/feesPage.js"></script>	
 
 </head>
 

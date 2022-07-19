@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(58, 47, 47);
+    background-color: #B2A4FF;
     position: fixed;
     top: 0;
     left:0;
@@ -13,7 +13,7 @@
 }
 
 ul.navBar > li > a {
-    color:rgba(255, 255, 255, 0.962);
+    color:black;
     display: block;
     float: right;
     text-align: center;
@@ -23,7 +23,7 @@ ul.navBar > li > a {
 
 ul.navBar > li > a:hover {
     color:white;
-    background-color: black;
+    background-color: #9080ea;
     display: block;
     float: right;
     text-align: center;
@@ -31,18 +31,57 @@ ul.navBar > li > a:hover {
     text-decoration: none;
 }
 
-#userForm {
-    padding: 20px 20px 20px 20px;
+.mainText {
+    padding: 40px 20px 40px 20px;
+    height: 80px;
+    background-color: #FFB4B4;
+    overflow: scroll;
+    border-radius: 8px;
+}
+
+#aboutText {
+    height: 115px;
+}
+
+#successText {
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#paymentSuccessText {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#retrievePrompt {
+    height: 30px;
+    padding: 15px 15px 15px 15px;
+}
+
+#userForm, #addressForm, #getDetailsForm, #paymentForm {
+    padding: 40px 20px 20px 20px;
 }
 
 #content {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-width: fit-content;
+    text-align: justify;
+}
+
+#notFoundText {
+    height: 130px;
+    text-align: center;
 }
 
 #successButtons, #retrieveButtons {
@@ -53,23 +92,29 @@ ul.navBar > li > a:hover {
 
 #successButtons button, #retrieveButtons button {
     margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px 50px 20px 50px;
+}
+
+#successButtons button:hover, #retrieveButtons button:hover {
+    margin-right: 50px;
+    margin-left: 50px;
     padding: 20px 50px 20px 50px;
 }
 
 #contactTable {
-	background-color: black;
-	color: white;
+	background-color: #FFF9CA;
+	color: black;
     border-collapse: collapse;
     min-width: fit-content;
     display: inline-block;
+    border:none;
 }
 
 #contactTable tr:nth-child(odd) {
-    background-color: #FFD700;
+    background-color: #FFDEB4;
     color: #000000;
 }
-
-
 
 #contactTable td {
 	height: 25px;
@@ -79,29 +124,35 @@ ul.navBar > li > a:hover {
 }
 
 #contactTable th {
-    background-color: navy;
-    color: white;
-	border: thin solid white;
+    background-color: #FFB4B4;
+    color: black;
 }
 
 #contactTable tr:last-child {
-    background-color: navy;
-	border: thin solid white;
+    background-color: #FFB4B4;
+    color: black;
 }
 
-#contactTable tr:last-child #next_address, #confirmation, #retrieve, #payment {
+#contactTable tr:last-child #next_address, #confirmation, #retrieve, #payment, #reset {
     display: block;
     margin:auto;
 }
 
-#next_address, #confirmation, #retrieve, #payment, #return, #register, #reenter, #home {
-    background-color: black;
+#next_address, #confirmation, #retrieve, #payment, #return, #register, #reenter, #home, #reset{
+    background-color: #B2A4FF;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #9080ea;
+}
+
+#next_address:hover, #confirmation:hover, #retrieve:hover, #payment:hover, #return:hover, #register:hover, #reenter:hover, #home:hover, #reset:hover {
+    background-color: #9080ea;
     color: white;
     border-radius: 8px;
     padding: 10px 10px 10px 10px;
+    border: 2px solid  #B2A4FF;
 }
-
-#age, #newdate { border: none; }
 
 #footer {
     width: 100%;
@@ -116,10 +167,22 @@ ul.navBar > li > a:hover {
     left: 0;
 }
 
+#photos {
+    display: flex;
+    justify-content: space-between;
+}
+
 a {
-    color: red;
+    color:blue;
+}
+
+.indexPhotos {
+    width: auto;
+    height: 260px;
+    margin: 25px 20px 0px 20px;
 }
 
 body {
 	font-family: 'Open Sans';
+    background-color: #ffdfb467;
 }

@@ -76,7 +76,7 @@
 
   <!-- start of form for address -->
   <form action="php_files/uploadAddressToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
-  <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
+  <table align="center" cellpadding="3" cellspacing="5" id="contactTable">
   <thead>
     <tr>
       <th colspan="8">Please enter your address details below</th>
@@ -96,7 +96,8 @@
       <td><input name="postCode" type="text" id="postCode" val=""/></td>
     </tr>
     <tr>
-      <td colspan=4><input name="next_address" type="submit" id="confirmation" value="Submit" val="register">
+      <td colspan=2><input name="next_address" type="submit" id="confirmation" value="Submit" val="register"></td>
+      <td colspan=2><input name="reset" type="button" id="reset" value="Reset" val="reset"></td>
     </tr>
   </tbody>
   </table>

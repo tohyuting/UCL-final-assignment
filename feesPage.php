@@ -38,7 +38,7 @@
 <div class="ui-datepicker-multi" id="content">
 
 <form action="php_files/uploadFeesToDB.php" method="post" enctype="multipart/form-data" id="paymentForm">
-<table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
+<table align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
     <th colspan="8">Pay your fees (£ 9.50)</th>

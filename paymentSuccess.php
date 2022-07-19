@@ -36,8 +36,12 @@
 
 <div class="ui-datepicker-multi" id="content">
 
-<p>Payment success! Thank you for choosing a tour with us.</p>
+<div id="paymentSuccessText" class="mainText">
+<p>Payment success!</br>Thank you for choosing a tour with us.</p>
 <button type="button" id="home">Home</button>
+
+</div>
+
 </div>
 
 

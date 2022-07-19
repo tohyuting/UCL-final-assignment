@@ -37,11 +37,14 @@
 
 <div class="ui-datepicker-multi" id="content">
 
-Sorry, this user does not exist in our system. Please reenter your details or register your details with us.
+<div class="mainText" id="notFoundText">
+Sorry, this user does not exist in our system.</br>Please reenter your details or register your details with us.
 
 <div id="retrieveButtons">
-<button type="button" id="register"> REGISTER YOUR DETAILS </button>
-<button type="button" id="reenter"> REENTER DETAILS </button>
+<button type="button" id="register"> Register your details </button>
+<button type="button" id="reenter"> Re-enter details </button>
+</div>
+
 </div>
 
 </div>

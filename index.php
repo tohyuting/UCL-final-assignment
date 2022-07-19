@@ -1,5 +1,23 @@
 <?php
+session_start();
 include("php_connect/DB_connect.php");
+
+if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
+        echo 'Set and not empty, and no undefined index error!';
+        $name = $_SESSION["firstName"];
+        $lname = $_SESSION["lastName"];
+        $dob = $_SESSION["dob"];
+        $age = $_SESSION["age"];
+        $phone = $_SESSION["phone"];
+        $email = $_SESSION["email"];
+        echo "<script>alert('$name')</script>";
+        echo "<script>alert('$lname')</script>";
+        echo "<script>alert('$dob')</script>";
+        echo "<script>alert('$age')</script>";
+        echo "<script>alert('$phone')</script>";
+        echo "<script>alert('$email')</script>";
+      } else {
+        echo "<script>alert('empty')</script>";}
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +44,18 @@ include("php_connect/DB_connect.php");
 
 
 <div id="content">
-<p>Welcome to Day Tour! We promise to provide you the greatest comfort for you to travel to your destination.
+<div class="mainText">
+
+Welcome to <b>Day Tour</b>! We promise to provide you the greatest comfort for you to travel to your destination.
 Click on About Us to know more about us! If you would like to contact us, feel free to find out contact details under Contact Us.
 If you are a first timer ready to start on your adventure, feel free to click on Sign Up page to register your details before paying for the day tour.
-If you are a returning adventurer, go ahead to the payment page to register for the tour again!</p>
+If you are a returning adventurer, go ahead to the Payment page to register for the tour again!
+</div>
+<div id="photos">
+<img src="images/stonehenge.jpg" class="indexPhotos"/>
+<img src="images/riverouse.jpg" class="indexPhotos"/>
+<img src="images/durdledoor.jpg" class="indexPhotos"/>
+</div>
 
 </div>
 	

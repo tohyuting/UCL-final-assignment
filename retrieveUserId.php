@@ -38,7 +38,7 @@
 <div class="ui-datepicker-multi" id="content">
 
 <form action="php_files/getUserId.php" method="post" enctype="multipart/form-data" id="getDetailsForm">
-<table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
+<table align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
     <th colspan="8">Please enter your details first</th>
@@ -62,7 +62,7 @@
 </table>
 </form>
 
-<p>New user? Sign up now <a href="registrationPage.php">HERE</a>!</p>
+<div class="mainText" id="retrievePrompt">New user? Sign up now <a href="registrationPage.php">HERE</a>!</div>
 </div>
 
 <div id="footer"> &#169; Day Tour 2022 </div>

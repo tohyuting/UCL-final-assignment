@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
     
-    $("tr:odd").css("background-color", "#FFD700");
-    $("tr:odd").css("color", "#000000");
     $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
@@ -88,6 +86,19 @@ $(document).ready(function(){
           $("#age").val(output);
         }
       });
+  });
+
+  $("#reset").click(function(){
+    localStorage.setItem("clicked", "false");
+    $.ajax({
+      url: 'https://localhost/final_assignment/php_files/clearSessionStorage.php',
+      type: 'POST',
+      crossDomain:true,
+      success: function(output){
+        window.location.href="registrationPage.php";
+      }
+    });
+
   });
 
     $("#addressForm").validate({

@@ -41,14 +41,14 @@ $result = mysqli_query($conn, $sql);
 
 <div id="content">
 
-Registration success, would you like to proceed with payment?
+<div id="successText" class="mainText">
+Registration success! </br> Would you like to proceed with payment?
 
 <div id="successButtons">
 <button type="button" id="payment"> Yes </button>
 <button type="button" id="return"> No </button>
 </div>
-	
-
+</div>
 </div>
 
 <div id="footer"> &#169; Day Tour 2022 </div>

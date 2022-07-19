@@ -83,7 +83,6 @@ $(document).ready(function(){
             localStorage.setItem("clicked", "false");
             $(form).submit();
             alert("stop");
-            window.location.href="registrationPage.php";
         }        
       });
 });

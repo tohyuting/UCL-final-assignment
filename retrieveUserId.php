@@ -20,7 +20,7 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>	
 <script type="text/javascript" src="js/validator.js"></script>	
-<script type="text/javascript" src="js/feesPage.js"></script>	
+<script type="text/javascript" src="js/retrieveID.js"></script>	
 
 </head>
 
@@ -30,27 +30,27 @@
 <div id="header"> HEADER </div>
 <div id="content">
 
-<form action="php_files/uploadFeesToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
+<form action="php_files/getUserId.php" method="post" enctype="multipart/form-data" id="addressForm">
 <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
     <th width="27%"><button type="button" class="navBack">HOME PAGE</button></th>
-    <th colspan="3">Pay your fees (£ 50)</th>
+    <th colspan="3">Please enter your details</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td align="right">Card Number</td>
-    <td width="27%"><input name="cardNumber" type="text" id="cardNumber" val=""/></td>
+    <td width="19%" align="right">First Name</td>
+    <td width="27%"><input name="firstName" type="text" id="firstName" val=""/></td>
+    <td align="right">Last Name</td>
+    <td><input name="lastName" type="text" id="lastName" val=""/></td>
   </tr>
   <tr>
-    <td width="19%" align="right">Expiry Date</td>
-    <td width="27%"><input name="expire" type="text" id="expire" val=""/></td>
-    <td align="right">CVV</td>
-    <td><input name="cvv" type="text" id="cvv" val=""/></td>
+    <td align="right">Date of Birth <input type="text" id="date"></td>
+    <td><input name="dob" type="text" id="dob" val=""/></td>
   </tr>
   <tr>
-    <td colspan=4><input name="next_payment" type="submit" id="payment" value="Continue to payment" val="pay">
+    <td colspan=4><input name="next_retrieve" type="submit" id="retrieve" value="Retrieve Data" val="Retrieve Data">
   </tr>
 </tbody>
 </table>

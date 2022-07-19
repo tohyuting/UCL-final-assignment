@@ -30,31 +30,7 @@
 <div id="header"> HEADER </div>
 <div id="content">
 
-<form action="php_files/uploadFeesToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
-<table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
-<thead>
-  <tr>
-    <th width="27%"><button type="button" class="navBack">HOME PAGE</button></th>
-    <th colspan="3">Pay your fees (£ 50)</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align="right">Card Number</td>
-    <td width="27%"><input name="cardNumber" type="text" id="cardNumber" val=""/></td>
-  </tr>
-  <tr>
-    <td width="19%" align="right">Expiry Date</td>
-    <td width="27%"><input name="expire" type="text" id="expire" val=""/></td>
-    <td align="right">CVV</td>
-    <td><input name="cvv" type="text" id="cvv" val=""/></td>
-  </tr>
-  <tr>
-    <td colspan=4><input name="next_payment" type="submit" id="payment" value="Continue to payment" val="pay">
-  </tr>
-</tbody>
-</table>
-</form>
+Payment success!
 </div>
 
 </div>

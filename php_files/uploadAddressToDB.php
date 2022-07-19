@@ -1,7 +1,7 @@
 <?php
 session_start();
 require('../php_connect/DB_connect.php');
-// to find the largest value in the database now
+// retrieve values from session variables
 $firstName = $_SESSION['firstName'];
 $lastName = $_SESSION['lastName'];
 $dob = $_SESSION['dob'];

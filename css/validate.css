@@ -4,8 +4,8 @@
 
 input.error { border: 2px solid red; }
 label.error {
-	width: 300px;
-	color: #036;
+	width: 20px;
+	color: red;
 	background-image: url('icons/unchecked.gif');
 	background-repeat: no-repeat;
 	background-position: left;

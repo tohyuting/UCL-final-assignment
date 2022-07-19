@@ -28,7 +28,6 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="pages/contact.html"> Contact Us </a></li>
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="pages/about.html"> About Us </a></li>
@@ -37,11 +36,11 @@
 
 <div class="ui-datepicker-multi" id="content">
 
-<form action="php_files/getUserId.php" method="post" enctype="multipart/form-data" id="addressForm">
+<form action="php_files/getUserId.php" method="post" enctype="multipart/form-data" id="getDetailsForm">
 <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
-    <th colspan="3">Please enter your details first</th>
+    <th colspan="8">Please enter your details first</th>
   </tr>
 </thead>
 <tbody>
@@ -52,8 +51,8 @@
     <td><input name="lastName" type="text" id="lastName" val=""/></td>
   </tr>
   <tr>
-    <td align="right">Date of Birth <input type="text" id="date"></td>
-    <td><input name="dob" type="text" id="dob" val=""/></td>
+    <td align="right">Date of Birth </td>
+    <td colspan="8"><input type="text" id="date"><br><input name="dob" type="text" id="dob" val=""/></td>
   </tr>
   <tr>
     <td colspan=4><input name="next_retrieve" type="submit" id="retrieve" value="Retrieve Data" val="Retrieve Data">

@@ -32,7 +32,6 @@ $result = mysqli_query($conn, $sql);
 <body>
 
 <ul class="navBar">
-        <li><a href="pages/contact.html"> Contact Us </a></li>
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="pages/about.html"> About Us </a></li>

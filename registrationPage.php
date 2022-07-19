@@ -28,7 +28,6 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="pages/contact.html"> Contact Us </a></li>
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="pages/about.html"> About Us </a></li>
@@ -37,71 +36,70 @@
 
 <div class="ui-datepicker-multi" id="content">
 	
-<!-- start of form for user -->
-<form name="userForm" id="userForm">
-<table align="center" cellpadding="3" cellspacing="5" id="contactTable">
+  <!-- start of form for user -->
+  <form name="userForm" id="userForm">
+  <table align="center" cellpadding="3" cellspacing="5" id="contactTable">
 
-<thead>
-  <tr>
-    <th colspan="8">Please enter your personal details below</th>
-  </tr>
-</thead>
+  <thead>
+    <tr>
+      <th colspan="8">Please enter your personal details below</th>
+    </tr>
+  </thead>
 
-<tbody>
-  <tr>
-    <td width ="28%" align="right">First Name</td>
-	  <td width="28%"><input name="firstName" type="text" id="firstName" val="" required="required"/></td>
-	  <td width="28%" align="right">Last Name</td>
-	  <td width="28%"><input name="lastName" type="text" id="lastName" val="" required="required"/></td>
-  </tr>
-  <tr>
-    <td align="right">Date of Birth</td>
-    <td><input type="text" id="date"><input name="newdate" type="text" id="newdate" val=""/></td>
-    <td align="right">Age</td>
-    <td><input name="age" type="text" id="age" val=""/></td>
-  </tr>
-  <tr>
-    <td width ="28%" align="right">Phone Number</td>
-	  <td width="29%"><input name="phone" type="text" id="phone" val="" required="required"/></td>
-	  <td width="28%" align="right">Email</td>
-	  <td width="28%"><input name="email" type="text" id="email" val="" required="required"/></td>
-  </tr>
-  
-  <tr>
-    <td colspan="4"> <input name="next_address" type="submit" id="next_address" value="next addr" val="register"></td>
-  </tr>
-</tbody>
-</table>
-</form>
+  <tbody>
+    <tr>
+      <td width ="28%" align="right">First Name</td>
+      <td width="28%"><input name="firstName" type="text" id="firstName" val="" required="required"/></td>
+      <td width="28%" align="right">Last Name</td>
+      <td width="28%"><input name="lastName" type="text" id="lastName" val="" required="required"/></td>
+    </tr>
+    <tr>
+      <td align="right">Date of Birth</td>
+      <td><input type="text" id="date"><input name="newdate" type="text" id="newdate" val=""/></td>
+      <td align="right">Age</td>
+      <td><input name="age" type="text" id="age" val="" readonly="readonly"/></td>
+    </tr>
+    <tr>
+      <td width ="28%" align="right">Phone Number</td>
+      <td width="29%"><input name="phone" type="text" id="phone" val="" required="required"/></td>
+      <td width="28%" align="right">Email</td>
+      <td width="28%"><input name="email" type="text" id="email" val="" required="required"/></td>
+    </tr>
+    
+    <tr>
+      <td colspan="4"> <input name="next_address" type="submit" id="next_address" value="Next Page" val="register"></td>
+    </tr>
+  </tbody>
+  </table>
+  </form>
 
-<!-- start of form for address -->
-<form action="php_files/uploadAddressToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
-<table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
-<thead>
-  <tr>
-    <th colspan="3">Enter your address details below</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td align="right">House name/no</td>
-    <td width="27%"><input name="house_numberName" type="text" id="house_numberName" val=""/></td>
-    <td width="19%" align="right">Street name</td>
-    <td width="27%"><input name="street_name" type="text" id="street_name" val=""/></td>
-  </tr>
-  <tr>
-    <td align="right">city</td>
-    <td><input name="city" type="text" id="city" val=""/></td>
-    <td align="right">post code</td>
-    <td><input name="postCode" type="text" id="postCode" val=""/></td>
-  </tr>
-  <tr>
-    <td colspan=4><input name="next_address" type="submit" id="confirmation" value="Submission" val="register">
-  </tr>
-</tbody>
-</table>
-</form>
-
+  <!-- start of form for address -->
+  <form action="php_files/uploadAddressToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
+  <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
+  <thead>
+    <tr>
+      <th colspan="8">Please enter your address details below</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="right">House name/no</td>
+      <td width="27%"><input name="house_numberName" type="text" id="house_numberName" val=""/></td>
+      <td width="19%" align="right">Street name</td>
+      <td width="27%"><input name="street_name" type="text" id="street_name" val=""/></td>
+    </tr>
+    <tr>
+      <td align="right">City</td>
+      <td><input name="city" type="text" id="city" val=""/></td>
+      <td align="right">Post code</td>
+      <td><input name="postCode" type="text" id="postCode" val=""/></td>
+    </tr>
+    <tr>
+      <td colspan=4><input name="next_address" type="submit" id="confirmation" value="Submit" val="register">
+    </tr>
+  </tbody>
+  </table>
+  </form>
 </div>
 
 

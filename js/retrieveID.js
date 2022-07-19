@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-    
-    $("tr:odd").css("background-color", "#EFF1F1");
 	$(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
@@ -15,6 +12,22 @@ $(document).ready(function(){
     yearRange: "-80:+00",
     altField: "#dob"
     });
+
+    $("#getDetailsForm").validate({
+        rules: {
+          firstName: "required",
+          lastName: "required",
+          dob: {required: true}
+        }, 
+          messages: {
+            firstName:"Required",
+            lastName: "Required",
+            dob: "Required"
+        }     
+      });
+
+
+
 });
 
 

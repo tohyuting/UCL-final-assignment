@@ -28,7 +28,6 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="pages/contact.html"> Contact Us </a></li>
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="pages/about.html"> About Us </a></li>
@@ -41,13 +40,13 @@
 <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
-    <th colspan="3">Pay your fees (£ 50)</th>
+    <th colspan="8">Pay your fees (£ 9.50)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td align="right">Card Number</td>
-    <td width="27%"><input name="cardNumber" type="text" id="cardNumber" val=""/></td>
+    <td width="27%" colspan="6"><input name="cardNumber" type="text" id="cardNumber" val="" style="width: 350px;"/></td>
   </tr>
   <tr>
     <td width="19%" align="right">Expiry Date</td>

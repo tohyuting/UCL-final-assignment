@@ -31,24 +31,62 @@ ul.navBar > li > a:hover {
     text-decoration: none;
 }
 
+#userForm {
+    padding: 20px 20px 20px 20px;
+}
+
 #content {
     padding-top: 50px;
     padding-bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: fit-content;
 }
 
 #contactTable {
 	background-color: black;
 	color: white;
-	border-radius: 1%;
+    border-collapse: collapse;
+    min-width: fit-content;
+    display: inline-block;
 }
+
+#contactTable tr:nth-child(odd) {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+
 
 #contactTable td {
 	height: 25px;
 	text-align: left;
+    width: 60px;
+    padding: 20px 20px 20px 20px;
+}
+
+#contactTable th {
+    background-color: navy;
+    color: white;
 	border: thin solid white;
+}
+
+#contactTable tr:last-child {
+    background-color: navy;
+	border: thin solid white;
+}
+
+#contactTable tr:last-child #next_address, #confirmation {
+    display: block;
+    margin:auto;
+}
+
+#next_address, #confirmation {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
 }
 
 #age, #newdate { border: none; }

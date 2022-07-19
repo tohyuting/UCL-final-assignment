@@ -26,11 +26,11 @@ $(document).ready(function(){
           newdate: {required: true}
         }, 
           messages: {
-            firstName:"Please enter first name",
-            lastName: "Please enter last name",
-            phone: "Please enter phone number",
-            email: "Please enter email",
-            newdate: "Please enter a valid date of birth"
+            firstName:"Required",
+            lastName: "Required",
+            phone: "Required",
+            email: "Required",
+            newdate: "Required"
         }, 
           submitHandler: function(form) {
             localStorage.setItem("clicked", "true");
@@ -76,18 +76,32 @@ $(document).ready(function(){
   });
     });
 
+    $("#newdate").change(function(){
+      var getBirth = $(this).val();
+
+      $.ajax({
+        url: 'https://localhost/final_assignment/php_files/getAge.php',
+        type: 'POST',
+        crossDomain:true, 
+        data: { dateIn : getBirth},
+        success: function(output){
+          $("#age").val(output);
+        }
+      });
+  });
+
     $("#addressForm").validate({
         rules: {
           house_numberName: "required",
           street_name: "required",
           city: "required",
-          postcode: "required"
+          postCode: "required"
         }, 
           messages: {
-            house_numberName:"Please enter your house name or number",
-            street_name: "Please enter your street name",
-            city: "Please enter your city",
-            postcode: "Please enter your postcode"
+            house_numberName:"Required",
+            street_name: "Required",
+            city: "Required",
+            postCode: "Required"
         }, 
           submitHandler: function(form) {
             localStorage.setItem("clicked", "false");

@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
     
-    $("tr:odd").css("background-color", "#EFF1F1");
-	$(".navBack").click(function() { location.href = 'index.php' });
+    $("tr:odd").css("background-color", "#FFD700");
+    $("tr:odd").css("color", "#000000");
+    $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
     showOn: "button",

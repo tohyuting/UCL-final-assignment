@@ -14,6 +14,7 @@
 <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
 <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">	
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -26,53 +27,59 @@
 
 <body>
 
-<div class="ui-datepicker-multi" id="container">
-<div id="header"> HEADER </div>
-<div id="content">
+<ul class="navBar">
+        <li><a href="pages/contact.html"> Contact Us </a></li>
+        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="registrationPage.php"> Sign Up </a></li>
+        <li><a href="pages/about.html"> About Us </a></li>
+        <li><a href="index.php"> Home </a></li>
+</ul>
+
+<div class="ui-datepicker-multi" id="content">
 	
+<!-- start of form for user -->
 <form name="userForm" id="userForm">
-<table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
+<table align="center" cellpadding="3" cellspacing="5" id="contactTable">
 
 <thead>
   <tr>
-    <th><button type="button" class="navBack">HOME PAGE</button></th>
-    <th colspan="3">REGISTER Please add details below</th>
+    <th colspan="8">Please enter your personal details below</th>
   </tr>
 </thead>
 
 <tbody>
   <tr>
     <td width ="28%" align="right">First Name</td>
-	  <td width="29%"><input name="firstName" type="text" id="firstName" val="" required="required"/></td>
-	  <td width="15%" align="right">Last Name</td>
+	  <td width="28%"><input name="firstName" type="text" id="firstName" val="" required="required"/></td>
+	  <td width="28%" align="right">Last Name</td>
 	  <td width="28%"><input name="lastName" type="text" id="lastName" val="" required="required"/></td>
   </tr>
   <tr>
-    <td align="right">DoB <input type="text" id="date"></td>
-    <td><input name="newdate" type="text" id="newdate" val=""/></td>
+    <td align="right">Date of Birth</td>
+    <td><input type="text" id="date"><input name="newdate" type="text" id="newdate" val=""/></td>
     <td align="right">Age</td>
     <td><input name="age" type="text" id="age" val=""/></td>
   </tr>
   <tr>
     <td width ="28%" align="right">Phone Number</td>
 	  <td width="29%"><input name="phone" type="text" id="phone" val="" required="required"/></td>
-	  <td width="15%" align="right">Email</td>
+	  <td width="28%" align="right">Email</td>
 	  <td width="28%"><input name="email" type="text" id="email" val="" required="required"/></td>
   </tr>
   
   <tr>
-    <td colspan=4> <input name="next_address" type="submit" id="next_address" value="next addr" val="register"></td>
+    <td colspan="4"> <input name="next_address" type="submit" id="next_address" value="next addr" val="register"></td>
   </tr>
 </tbody>
 </table>
 </form>
 
+<!-- start of form for address -->
 <form action="php_files/uploadAddressToDB.php" method="post" enctype="multipart/form-data" id="addressForm">
 <table  border="1" align="center" cellpadding="3" cellspacing="5" id="contactTable">
 <thead>
   <tr>
-    <th width="27%"><button type="button" class="navBack">HOME PAGE</button></th>
-    <th colspan="3">REGISTERED</th>
+    <th colspan="3">Enter your address details below</th>
   </tr>
 </thead>
 <tbody>
@@ -94,12 +101,11 @@
 </tbody>
 </table>
 </form>
-</div>
 
 </div>
 
-<div id="footer"> &#169; Day Tour 2022 </div>
-</div>             
+
+<div id="footer"> &#169; Day Tour 2022 </div>            
 
 </body>             
 </html>             

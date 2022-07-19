@@ -23,6 +23,7 @@ $result = mysqli_query($conn, $sql);
 <title>Summer school web exercise</title>
 	
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <script src="js/jquery_lib.js"></script>
 <script src="js/registrationSuccess.js"></script>
 
@@ -30,8 +31,14 @@ $result = mysqli_query($conn, $sql);
 
 <body>
 
-<div id="container">
-<div id="header"> HEADER </div>
+<ul class="navBar">
+        <li><a href="pages/contact.html"> Contact Us </a></li>
+        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="registrationPage.php"> Sign Up </a></li>
+        <li><a href="pages/about.html"> About Us </a></li>
+        <li><a href="index.php"> Home </a></li>
+</ul>
+
 <div id="content">
 	
 <table border="1" align="center" cellpadding="4" cellspacing="4">
@@ -52,7 +59,6 @@ Registration success, would you like to proceed with payment?
 </div>
 
 <div id="footer"> &#169; Day Tour 2022 </div>
-</div>
                     
                     
                     

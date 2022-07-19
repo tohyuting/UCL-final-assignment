@@ -18,7 +18,7 @@ include("php_connect/DB_connect.php");
 
 <ul class="navBar">
         <li><a href="pages/contact.html"> Contact Us </a></li>
-        <li><a href="feesPage.php"> Payment </a></li>
+        <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="pages/about.html"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>

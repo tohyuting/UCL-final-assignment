@@ -5,8 +5,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Summer school web exercise</title>
-	
+<title>Day Tour</title>
+
+<link rel="shortcut icon" type="image/jpg" href="images/destination.png"/>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css">
 <link type="text/css" rel="stylesheet" href="css/validate.css">
 <link href="css/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +31,7 @@
 <ul class="navBar">
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
-        <li><a href="pages/about.html"> About Us </a></li>
+        <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
 </ul>
 
@@ -38,8 +39,11 @@
 
 Sorry, this user does not exist in our system. Please reenter your details or register your details with us.
 
+<div id="retrieveButtons">
 <button type="button" id="register"> REGISTER YOUR DETAILS </button>
 <button type="button" id="reenter"> REENTER DETAILS </button>
+</div>
+
 </div>
 
 

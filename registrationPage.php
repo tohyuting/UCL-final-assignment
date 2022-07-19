@@ -5,8 +5,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Summer school web exercise</title>
-	
+<title>Day Tour</title>
+
+<link rel="shortcut icon" type="image/jpg" href="images/destination.png"/>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css">
 <link type="text/css" rel="stylesheet" href="css/validate.css">
 <link href="css/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +31,7 @@
 <ul class="navBar">
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
-        <li><a href="pages/about.html"> About Us </a></li>
+        <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
 </ul>
 

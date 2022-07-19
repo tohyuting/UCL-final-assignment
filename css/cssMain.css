@@ -41,7 +41,19 @@ ul.navBar > li > a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-width: fit-content;
+}
+
+#successButtons, #retrieveButtons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+#successButtons button, #retrieveButtons button {
+    margin-right: 50px;
+    padding: 20px 50px 20px 50px;
 }
 
 #contactTable {
@@ -77,12 +89,12 @@ ul.navBar > li > a:hover {
 	border: thin solid white;
 }
 
-#contactTable tr:last-child #next_address, #confirmation {
+#contactTable tr:last-child #next_address, #confirmation, #retrieve, #payment {
     display: block;
     margin:auto;
 }
 
-#next_address, #confirmation {
+#next_address, #confirmation, #retrieve, #payment, #return, #register, #reenter, #home {
     background-color: black;
     color: white;
     border-radius: 8px;
@@ -102,6 +114,10 @@ ul.navBar > li > a:hover {
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+a {
+    color: red;
 }
 
 body {

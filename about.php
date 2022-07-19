@@ -26,10 +26,10 @@ include("php_connect/DB_connect.php");
 
 
 <div id="content">
-<p>Welcome to Day Tour! We promise to provide you the greatest comfort for you to travel to your destination.
-Click on About Us to know more about us! If you would like to contact us, feel free to find out contact details under Contact Us.
-If you are a first timer ready to start on your adventure, feel free to click on Sign Up page to register your details before paying for the day tour.
-If you are a returning adventurer, go ahead to the payment page to register for the tour again!</p>
+<p>Day Tour was founded this year during the pandemic. We offer great tours for you to choose from in order to explore the city.
+All you need to do is to sign up with us to register your details and pay for your tour! We guarantee that the tour will be a memorable
+experience for you.</p>
+<p>If you have any further questions, feel free to contact us <a href="mailto:daytour2022@gmail.com">here</a></p>
 
 </div>
 	

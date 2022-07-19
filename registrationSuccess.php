@@ -1,6 +1,6 @@
 <?php
 session_start();
-$user_Id = $_REQUEST['user_Id'];
+//$user_Id = $_REQUEST['user_Id'];
 
 if(isset($_REQUEST['message'])){
 $message = $_REQUEST['message'];
@@ -20,8 +20,9 @@ $result = mysqli_query($conn, $sql);
 <html>
 <head>
 <meta charset="utf-8">
-<title>Summer school web exercise</title>
-	
+<title>Day Tour</title>
+
+<link rel="shortcut icon" type="image/jpg" href="images/destination.png"/>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <script src="js/jquery_lib.js"></script>
@@ -34,25 +35,18 @@ $result = mysqli_query($conn, $sql);
 <ul class="navBar">
         <li><a href="retrieveUserId.php"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
-        <li><a href="pages/about.html"> About Us </a></li>
+        <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
 </ul>
 
 <div id="content">
-	
-<table border="1" align="center" cellpadding="4" cellspacing="4">
-  <tbody>
-    <tr>
-      <td><span id="homeLink">HOME</span></td>
-		<td><span id="truncate">empty database</span></td>
-    </tr>
-  </tbody>
-</table>
 
 Registration success, would you like to proceed with payment?
 
+<div id="successButtons">
 <button type="button" id="payment"> Yes </button>
 <button type="button" id="return"> No </button>
+</div>
 	
 
 </div>

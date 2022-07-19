@@ -34,7 +34,7 @@ Payment success!
 
 </div>
 
-<div id="footer"> FOOTER </div>
+<div id="footer"> &#169; Day Tour 2022 </div>
 </div>                             
                     
                     

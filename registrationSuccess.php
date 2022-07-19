@@ -51,7 +51,7 @@ Registration success, would you like to proceed with payment?
 
 </div>
 
-<div id="footer"> FOOTER </div>
+<div id="footer"> &#169; Day Tour 2022 </div>
 </div>
                     
                     

@@ -25,10 +25,6 @@ $ageNow = $splitDate[2] - $splitAgeDate[2];
 //echo "<hr>AGE NOW =".$ageNow;
 
 //notice that the day and the month is recorded but not used
+echo $ageNow;
 ?>
 
-<!--use script to aggign the $ageNow variable into the 'age' input in the form-->
-<script>	
-var currentAge = "<?php echo $ageNow; ?>";
-$('#age').val(currentAge); 
-</script>

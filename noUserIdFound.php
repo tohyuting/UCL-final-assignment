@@ -38,7 +38,7 @@ Sorry, this user does not exist in our system. Please reenter your details or re
 
 </div>
 
-<div id="footer"> FOOTER </div>
+<div id="footer"> &#169; Day Tour 2022 </div>
 </div>                             
                     
                     

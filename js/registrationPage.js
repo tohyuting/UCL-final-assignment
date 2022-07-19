@@ -63,7 +63,16 @@ $(document).ready(function(){
         
     $("#date").change(function(){
         var getBirth = $(this).val();
-        $('#loadAgeCalc').load("php_files/getAge.php?dateIn="+getBirth);
+
+        $.ajax({
+          url: 'https://localhost/final_assignment/php_files/getAge.php',
+          type: 'POST',
+          crossDomain:true, 
+          data: { dateIn : getBirth},
+          success: function(output){
+            $("#age").val(output);
+          }
+  });
     });
 
     $("#addressForm").validate({

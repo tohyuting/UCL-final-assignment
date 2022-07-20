@@ -17,6 +17,8 @@
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bitter:ital@1&display=swap" rel="stylesheet">
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -58,7 +60,7 @@
     <td><input name="cvv" type="text" id="cvv" val=""/></td>
   </tr>
   <tr>
-    <td colspan=4><input class="mainButtons" name="next_payment" type="submit" id="payment" value="Continue to payment" val="pay"></td>
+    <td colspan=4><input class="mainButtons" name="next_payment" type="submit" id="payment" value="Continue to payment &#10145;" val="pay"></td>
   </tr>
 </tbody>
 </table>
@@ -66,7 +68,7 @@
 
 <div id="paymentTextAndReset" class="textAndReset">
 <div id="paymentText" class="mainText"></div>
-<input class="mainButtons" name="reset_user" type="button" id="resetUser" value="Reset User" val="Reset User">
+<input class="mainButtons" name="reset_user" type="button" id="resetUser" value="Reset User &#10548;" val="Reset User">
 </div>
 
 </div>

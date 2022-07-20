@@ -11,7 +11,8 @@ include("php_connect/DB_connect.php");
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet"> 
 <script src="js/jquery_lib.js"></script>
 <script src="js/index.js"></script>
 

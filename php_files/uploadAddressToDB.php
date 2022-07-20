@@ -45,9 +45,7 @@ $street_name = $_REQUEST['street_name'];
 $city = $_REQUEST['city'];
 $postCode = $_REQUEST['postCode'];
 
-echo "<script>alert('$house_numberName')</script>";
-echo "<script>alert('$street_name')</script>";
-echo "<script>alert('$city')</script>";
+
 
 //insert the postdata into the database
 $sql = "INSERT INTO `address` 
@@ -56,10 +54,6 @@ VALUES (NULL, '$user_Id','$house_numberName','$street_name','$city','$postCode')
 
 //bug finder
 if ($conn->query($sql) === TRUE) { 
-/*
-	sleep(0.5);	
-echo "jobs a goodun"; 
-echo "<script>alert('why')</script>";*/
 
 //if all ok load the address page with the user ID as post data
 header("Location:../registrationSuccess.php");	

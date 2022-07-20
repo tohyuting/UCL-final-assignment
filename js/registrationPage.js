@@ -33,6 +33,7 @@ $(document).ready(function(){
           submitHandler: function(form) {
             localStorage.setItem("clicked", "true");
             var firstName = $('#firstName').val();
+
             var lastName = $('#lastName').val();
             var dob = $('#newdate').val();
             var age = $('#age').val();
@@ -45,11 +46,10 @@ $(document).ready(function(){
                     crossDomain:true, 
                     data: { firstNameVal : firstName, lastNameVal : lastName, dobVal : dob, ageVal : age, phoneVal: phone, emailVal: email},
                     success: function(output){
-                      alert(output);
+                      window.location.href="registrationPage.php";
                     }
             });
-            alert("stop");
-            window.location.href="registrationPage.php";
+
         }        
       });
 

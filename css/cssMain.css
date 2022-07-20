@@ -35,11 +35,16 @@ ul.navBar > li > a:hover {
 
 .mainText {
     padding: 40px 20px 40px 20px;
-    height: 80px;
+    height: 90px;
     background-color: #FFB4B4;
     overflow: scroll;
     border-radius: 8px;
-    font-size: 20px;
+}
+
+#indexButtons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 #aboutText {
@@ -124,6 +129,7 @@ ul.navBar > li > a:hover {
     min-width: fit-content;
     display: inline-block;
     border:none;
+    font-family: 'Arvo', serif;
 }
 
 #contactTable tr:nth-child(odd) {
@@ -160,6 +166,9 @@ ul.navBar > li > a:hover {
     border-radius: 8px;
     padding: 10px 10px 10px 10px;
     border: 2px solid #9080ea;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .mainButtons:hover {
@@ -194,11 +203,12 @@ a {
 
 .indexPhotos {
     width: auto;
-    height: 255px;
+    height: 245px;
     margin: 25px 20px 0px 20px;
+    padding-bottom: 0px;
 }
 
 body {
-	font-family: 'Edu SA Beginner', cursive;
+	font-family: 'Bitter', serif;
     background-color: #ffdfb467;
 }

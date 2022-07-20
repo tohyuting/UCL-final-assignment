@@ -5,7 +5,6 @@ $(document).ready(function(){
 			type: 'POST',
 			crossDomain:true,
 			success: function(output){
-			  alert(output);
 			  location.href = 'index.php';
 			}
 		});

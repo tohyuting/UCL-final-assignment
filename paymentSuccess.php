@@ -16,6 +16,8 @@
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -40,7 +42,7 @@
 
 <div id="paymentSuccessText" class="mainText">
 <p>Payment success!</br>Thank you for choosing a tour with us.</p>
-<button type="button" id="home" class="mainButtons">Home</button>
+<button type="button" id="home" class="mainButtons">Home &#127968;</button>
 
 </div>
 

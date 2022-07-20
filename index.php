@@ -31,8 +31,11 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <script src="js/jquery_lib.js"></script>
 <script src="js/index.js"></script>
+<script src="js/indexButtons.js"></script>
 
 </head>
 
@@ -50,9 +53,13 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
 <div class="mainText">
 
 Welcome to <b>Day Tour</b>! We promise to provide you the greatest comfort for you to travel to your destination.
-Click on About Us to know more about us! If you would like to contact us, feel free to find out contact details under Contact Us.
-If you are a first timer ready to start on your adventure, feel free to click on Sign Up page to register your details before paying for the day tour.
-If you are a returning adventurer, go ahead to the Payment page to register for the tour again!
+
+<div id="indexButtons">
+<button id="startAdventure" class="mainButtons">Start Your Adventure &#9978;</button>
+<button id="moreInfo" class="mainButtons">More Information &#128195;</button>
+<button id="payAdventure" class="mainButtons">Pay For Your Adventure &#128183;</button>
+</div>
+
 </div>
 <div id="photos">
 <img src="images/stonehenge.jpg" class="indexPhotos"/>

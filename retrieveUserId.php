@@ -17,6 +17,8 @@
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bitter:ital@1&display=swap" rel="stylesheet">
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -58,13 +60,13 @@
     <td colspan="8"><input type="text" id="date"><br><input name="dob" type="text" id="dob" val=""/></td>
   </tr>
   <tr>
-    <td colspan=4><input class="mainButtons" name="next_retrieve" type="submit" id="retrieve" value="Retrieve Data" val="Retrieve Data"></td>
+    <td colspan=4><input class="mainButtons" name="next_retrieve" type="submit" id="retrieve" value="Retrieve Data &#10549;" val="Retrieve Data"></td>
   </tr>
 </tbody>
 </table>
 </form>
 
-<div class="mainText" id="retrievePrompt">New user? Sign up now <a href="registrationPage.php">HERE</a>!</div>
+<div class="mainText" id="retrievePrompt">New user? &#128516; Sign up for free <a href="registrationPage.php">HERE</a>!</div>
 </div>
 
 <div id="footer"> &#169; Day Tour 2022 </div>

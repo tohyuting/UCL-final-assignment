@@ -17,6 +17,8 @@
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -43,8 +45,8 @@
 Sorry, this user does not exist in our system.</br>Please reenter your details or register your details with us.
 
 <div id="retrieveButtons">
-<button type="button" id="register" class="mainButtons"> Register your details </button>
-<button type="button" id="reenter" class="mainButtons"> Re-enter details </button>
+<button type="button" id="register" class="mainButtons"> Register your details &#128221;</button>
+<button type="button" id="reenter" class="mainButtons"> Re-enter details &#10548;</button>
 </div>
 
 </div>

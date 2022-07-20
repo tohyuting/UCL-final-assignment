@@ -20,7 +20,6 @@ $(document).ready(function(){
         type: 'POST',
         crossDomain:true, 
         success: function(output){
-          alert("reset");
           window.location.href="retrieveUserId.php";
         }
       });

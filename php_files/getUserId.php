@@ -14,10 +14,6 @@ WHERE `firstname`='$firstName'
 AND `lastName`='$lastName'
 AND `dob`='$mysqldate'";
 
-echo "<script>alert('$firstName')</script>";
-echo "<script>alert('$lastName')</script>";
-echo "<script>alert('$dob')</script>";
-
 $user_Id = 0;
 
 //output data of each row

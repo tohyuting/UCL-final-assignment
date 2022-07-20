@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("php_connect/DB_connect.php");
-
+/*
 if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
         echo 'Set and not empty, and no undefined index error!';
         $name = $_SESSION["firstName"];
@@ -10,14 +10,16 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
         $age = $_SESSION["age"];
         $phone = $_SESSION["phone"];
         $email = $_SESSION["email"];
+        $userId = $_SESSION["userId"];
         echo "<script>alert('$name')</script>";
         echo "<script>alert('$lname')</script>";
         echo "<script>alert('$dob')</script>";
         echo "<script>alert('$age')</script>";
         echo "<script>alert('$phone')</script>";
         echo "<script>alert('$email')</script>";
+        echo "<script>alert('$userId')</script>";
       } else {
-        echo "<script>alert('empty')</script>";}
+        echo "<script>alert('empty')</script>";}*/
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +30,7 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
 <link rel="shortcut icon" type="image/jpg" href="images/destination.png"/>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script src="js/jquery_lib.js"></script>
 <script src="js/index.js"></script>
 
@@ -36,7 +39,7 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
 <body>
 
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>

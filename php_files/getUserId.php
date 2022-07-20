@@ -33,6 +33,8 @@ if ($user_Id == 0) {
     header("Location: ../noUserIdFound.php");
 } else {
     $_SESSION["userId"] = $user_Id;
+    $_SESSION["firstName"] = $firstName;
+    $_SESSION["lastName"] = $lastName;
     header("Location:../feesPage.php");
 }
 $conn->close();

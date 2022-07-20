@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".navBack").click(function() { location.href = 'index.php' });
+    $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
     showOn: "button",

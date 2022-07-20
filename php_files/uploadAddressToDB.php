@@ -21,6 +21,8 @@ while ($row = $userIdResult->fetch_row()) {
 // to generate current Id
 $user_Id = $user_Id + 1;
 
+$_SESSION['userId'] = $user_Id;
+
 $insertUser = "INSERT INTO `users` 
 (`user_Id`, `firstName`, `lastName`, `dob`, `age`) 
 VALUES ('$user_Id', '$firstName','$lastName','$mysqldate','$age')";
@@ -60,7 +62,7 @@ echo "jobs a goodun";
 echo "<script>alert('why')</script>";*/
 
 //if all ok load the address page with the user ID as post data
-header("Location:../registrationSuccess.php?user_Id=".$user_Id."&message=ADDRESS AND NAME LOGGED");	
+header("Location:../registrationSuccess.php");	
 //else throw an error
 } else { echo "Error: ".$sql."<br>".$conn->error; }
 

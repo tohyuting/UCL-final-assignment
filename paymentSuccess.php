@@ -15,6 +15,7 @@
 <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">	
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
@@ -22,13 +23,14 @@
 <script type="text/javascript" src="js/slider.js"></script>	
 <script type="text/javascript" src="js/validator.js"></script>	
 <script type="text/javascript" src="js/paymentSuccess.js"></script>	
+<script type="text/javascript" src="js/index.js"></script>	
 
 </head>
 
 <body>
   
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
@@ -38,7 +40,7 @@
 
 <div id="paymentSuccessText" class="mainText">
 <p>Payment success!</br>Thank you for choosing a tour with us.</p>
-<button type="button" id="home">Home</button>
+<button type="button" id="home" class="mainButtons">Home</button>
 
 </div>
 

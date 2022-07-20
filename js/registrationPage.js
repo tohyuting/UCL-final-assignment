@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $("#addressText").load("php_files/getPreviousDetails.php");
     
     $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
@@ -55,9 +55,11 @@ $(document).ready(function(){
 
     if (localStorage.getItem("clicked") == "true") {
         $('#addressForm').show();
+        $('#addressText').show();
         $('#userForm').hide();
     } else {
         $('#addressForm').hide();
+        $('#addressText').hide();
     }
         
     $("#date").change(function(){
@@ -71,7 +73,7 @@ $(document).ready(function(){
           success: function(output){
             $("#age").val(output);
           }
-  });
+        });
     });
 
     $("#newdate").change(function(){
@@ -114,11 +116,9 @@ $(document).ready(function(){
             city: "Required",
             postCode: "Required"
         }, 
-          submitHandler: function(form) {
+          success: function() {
             localStorage.setItem("clicked", "false");
-            $(form).submit();
-            alert("stop");
-        }        
+          }        
       });
 });
 

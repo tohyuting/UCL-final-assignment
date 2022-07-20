@@ -1,5 +1,17 @@
 $(document).ready(function(){
-	$("tr:odd").css("background-color", "#EFF1F1");
-	$("#navBack").click(function() { location.href = 'registrationPage.php' });
-	$("#payFees").click(function() {location.href = 'retrieveUserId.php'});
+	$("#toPayment").click(function(){
+		$.ajax({
+			url: 'https://localhost/final_assignment/php_files/checkUser.php',
+			type: 'POST',
+			crossDomain:true, 
+			success: function(output){
+			  if (output == true) {
+				location.href = 'feesPage.php';
+			  } else {
+				alert("false");
+				location.href= 'retrieveUserId.php';
+			  }
+			}
+		  });
+	})
 }); 

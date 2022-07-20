@@ -10,6 +10,7 @@
     left:0;
     width: 100%;
     height: 50px;
+    font-family: 'Playfair Display', serif;
 }
 
 ul.navBar > li > a {
@@ -19,6 +20,7 @@ ul.navBar > li > a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 ul.navBar > li > a:hover {
@@ -37,10 +39,18 @@ ul.navBar > li > a:hover {
     background-color: #FFB4B4;
     overflow: scroll;
     border-radius: 8px;
+    font-size: 20px;
 }
 
 #aboutText {
-    height: 115px;
+    height: 120px;
+}
+
+#addressText, #paymentText {
+    height: 45px;
+    padding: 15px 15px 15px 15px;
+    margin-right: 40px;
+    font-size: 16px;
 }
 
 #successText {
@@ -49,6 +59,11 @@ ul.navBar > li > a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.textAndReset {
+    display: flex;
+    flex-direction: row;
 }
 
 #paymentSuccessText {
@@ -69,7 +84,7 @@ ul.navBar > li > a:hover {
 }
 
 #content {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 70px;
     display: flex;
     align-items: center;
@@ -126,6 +141,7 @@ ul.navBar > li > a:hover {
 #contactTable th {
     background-color: #FFB4B4;
     color: black;
+    text-align: center;
 }
 
 #contactTable tr:last-child {
@@ -133,12 +149,12 @@ ul.navBar > li > a:hover {
     color: black;
 }
 
-#contactTable tr:last-child #next_address, #confirmation, #retrieve, #payment, #reset {
+#contactTable tr:last-child .mainButtons {
     display: block;
     margin:auto;
 }
 
-#next_address, #confirmation, #retrieve, #payment, #return, #register, #reenter, #home, #reset{
+.mainButtons {
     background-color: #B2A4FF;
     color: black;
     border-radius: 8px;
@@ -146,7 +162,7 @@ ul.navBar > li > a:hover {
     border: 2px solid #9080ea;
 }
 
-#next_address:hover, #confirmation:hover, #retrieve:hover, #payment:hover, #return:hover, #register:hover, #reenter:hover, #home:hover, #reset:hover {
+.mainButtons:hover {
     background-color: #9080ea;
     color: white;
     border-radius: 8px;
@@ -178,11 +194,11 @@ a {
 
 .indexPhotos {
     width: auto;
-    height: 260px;
+    height: 255px;
     margin: 25px 20px 0px 20px;
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'Edu SA Beginner', cursive;
     background-color: #ffdfb467;
 }

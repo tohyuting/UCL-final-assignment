@@ -25,7 +25,9 @@ $result = mysqli_query($conn, $sql);
 <link rel="shortcut icon" type="image/jpg" href="images/destination.png"/>
 <link type="text/css" rel="stylesheet" href="css/cssMain.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script src="js/jquery_lib.js"></script>
+<script src="js/index.js"></script>
 <script src="js/registrationSuccess.js"></script>
 
 </head>
@@ -33,7 +35,7 @@ $result = mysqli_query($conn, $sql);
 <body>
 
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
@@ -45,8 +47,8 @@ $result = mysqli_query($conn, $sql);
 Registration success! </br> Would you like to proceed with payment?
 
 <div id="successButtons">
-<button type="button" id="payment"> Yes </button>
-<button type="button" id="return"> No </button>
+<button type="button" class="mainButtons" id="payment"> Yes </button>
+<button type="button" class="mainButtons" id="return"> No </button>
 </div>
 </div>
 </div>

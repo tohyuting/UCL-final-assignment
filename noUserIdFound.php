@@ -16,11 +16,13 @@
 <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">	
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>	
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/validator.js"></script>
 <script type="text/javascript" src="js/noUserFound.js"></script>		
 
@@ -29,7 +31,7 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
@@ -41,8 +43,8 @@
 Sorry, this user does not exist in our system.</br>Please reenter your details or register your details with us.
 
 <div id="retrieveButtons">
-<button type="button" id="register"> Register your details </button>
-<button type="button" id="reenter"> Re-enter details </button>
+<button type="button" id="register" class="mainButtons"> Register your details </button>
+<button type="button" id="reenter" class="mainButtons"> Re-enter details </button>
 </div>
 
 </div>

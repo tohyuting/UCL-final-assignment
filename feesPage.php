@@ -16,12 +16,14 @@
 <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">	
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>	
 <script type="text/javascript" src="js/validator.js"></script>	
+<script type="text/javascript" src="js/index.js"></script>	
 <script type="text/javascript" src="js/feesPage.js"></script>	
 
 </head>
@@ -29,7 +31,7 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
@@ -56,11 +58,17 @@
     <td><input name="cvv" type="text" id="cvv" val=""/></td>
   </tr>
   <tr>
-    <td colspan=4><input name="next_payment" type="submit" id="payment" value="Continue to payment" val="pay">
+    <td colspan=4><input class="mainButtons" name="next_payment" type="submit" id="payment" value="Continue to payment" val="pay"></td>
   </tr>
 </tbody>
 </table>
 </form>
+
+<div id="paymentTextAndReset" class="textAndReset">
+<div id="paymentText" class="mainText"></div>
+<input class="mainButtons" name="reset_user" type="button" id="resetUser" value="Reset User" val="Reset User">
+</div>
+
 </div>
 
 <div id="footer"> &#169; Day Tour 2022 </div>                            

@@ -16,12 +16,14 @@
 <link href="css/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">	
 <link href="css/validate.css" rel="stylesheet" type="text/css">	
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet"> 
 <script type="text/javascript" scr="js/jquery.ui-1.10.4.datepicker.min.js"></script>
 <script type="text/javascript" src="js/jquery_lib.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>	
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>	
-<script type="text/javascript" src="js/validator.js"></script>	
+<script type="text/javascript" src="js/validator.js"></script>
+<script type="text/javascript" src="js/index.js"></script>		
 <script type="text/javascript" src="js/registrationPage.js"></script>
 
 </head>
@@ -29,7 +31,7 @@
 <body>
 
 <ul class="navBar">
-        <li><a href="retrieveUserId.php"> Payment </a></li>
+        <li><a href="#" id="toPayment"> Payment </a></li>
         <li><a href="registrationPage.php"> Sign Up </a></li>
         <li><a href="about.php"> About Us </a></li>
         <li><a href="index.php"> Home </a></li>
@@ -68,7 +70,7 @@
     </tr>
     
     <tr>
-      <td colspan="4"> <input name="next_address" type="submit" id="next_address" value="Next Page" val="register"></td>
+      <td colspan="4"> <input class="mainButtons" name="next_address" type="submit" id="next_address" value="Next Page" val="register"></td>
     </tr>
   </tbody>
   </table>
@@ -96,12 +98,16 @@
       <td><input name="postCode" type="text" id="postCode" val=""/></td>
     </tr>
     <tr>
-      <td colspan=2><input name="next_address" type="submit" id="confirmation" value="Submit" val="register"></td>
-      <td colspan=2><input name="reset" type="button" id="reset" value="Reset" val="reset"></td>
+      <td colspan=2><input class="mainButtons" name="next_address" type="submit" id="confirmation" value="Submit" val="register"></td>
+      <td colspan=2><input class="mainButtons" name="reset" type="button" id="reset" value="Reset" val="reset"></td>
     </tr>
   </tbody>
   </table>
   </form>
+
+  <!-- end of address form -->
+    <div id="addressText" class="mainText"></div>
+
 </div>
 
 

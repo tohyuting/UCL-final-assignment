@@ -101,8 +101,8 @@
       <td><input name="postCode" type="text" id="postCode" val=""/></td>
     </tr>
     <tr>
+    <td colspan=2><input class="mainButtons" name="reset" type="button" id="reset" value="Reset &#10548;" val="reset"></td>
       <td colspan=2><input class="mainButtons" name="next_address" type="submit" id="confirmation" value="Submit &#10145;" val="register"></td>
-      <td colspan=2><input class="mainButtons" name="reset" type="button" id="reset" value="Reset &#10548;" val="reset"></td>
     </tr>
   </tbody>
   </table>

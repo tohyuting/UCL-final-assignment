@@ -1,25 +1,6 @@
 <?php
 session_start();
 include("php_connect/DB_connect.php");
-/*
-if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
-        echo 'Set and not empty, and no undefined index error!';
-        $name = $_SESSION["firstName"];
-        $lname = $_SESSION["lastName"];
-        $dob = $_SESSION["dob"];
-        $age = $_SESSION["age"];
-        $phone = $_SESSION["phone"];
-        $email = $_SESSION["email"];
-        $userId = $_SESSION["userId"];
-        echo "<script>alert('$name')</script>";
-        echo "<script>alert('$lname')</script>";
-        echo "<script>alert('$dob')</script>";
-        echo "<script>alert('$age')</script>";
-        echo "<script>alert('$phone')</script>";
-        echo "<script>alert('$email')</script>";
-        echo "<script>alert('$userId')</script>";
-      } else {
-        echo "<script>alert('empty')</script>";}*/
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +33,7 @@ if(array_key_exists('firstName',$_SESSION) && !empty($_SESSION['firstName'])) {
 <div id="content">
 <div class="mainText">
 
-Welcome to <b>Day Tour</b>! We promise to provide you the greatest comfort for you to travel to your destination.
+Welcome to <b>Day Tour</b>! We promise to deliver great experiences for your day tours.
 
 <div id="indexButtons">
 <button id="startAdventure" class="mainButtons">Start Your Adventure &#9978;</button>

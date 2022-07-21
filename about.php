@@ -29,8 +29,8 @@ include("php_connect/DB_connect.php");
 
 
 <div id="content">
-<div class="mainText" id="aboutText"><b>Day Tour</b> was founded by a group of travellers who are adventurers. We offer great tours for you to explore the city.
-All you need to do is to sign up with us to register your details and pay for your tour! We guarantee that the tour will be a memorable
+<div class="mainText" id="aboutText"><b>Day Tour</b> was founded by a group of adventurers. We offer great tours for you to explore the city.
+All you need to do is to register your details with us and pay for your tour! We guarantee that the tour will be a memorable
 experience for you.
 <p>If you have any further questions, feel free to contact us <a href="mailto:daytour2022@gmail.com">here</a>!</div>
 

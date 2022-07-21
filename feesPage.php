@@ -55,7 +55,7 @@
   </tr>
   <tr>
     <td width="19%" align="right">Expiry Date</td>
-    <td width="27%"><input name="expire" type="text" id="expire" val=""/></td>
+    <td width="27%"><input name="expire" type="month" id="expire" val=""/></td>
     <td align="right">CVV</td>
     <td><input name="cvv" type="text" id="cvv" val=""/></td>
   </tr>

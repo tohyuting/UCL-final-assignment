@@ -28,7 +28,7 @@ $(document).ready(function(){
             firstName:"Required",
             lastName: "Required",
             phone: "Required",
-            email: "Required",
+            email: "Invalid Email",
             newdate: "Required"
         }, 
           submitHandler: function(form) {

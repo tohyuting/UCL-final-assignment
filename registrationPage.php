@@ -69,7 +69,7 @@
       <td width ="28%" align="right">Phone Number</td>
       <td width="29%"><input name="phone" type="text" id="phone" val="" required="required"/></td>
       <td width="28%" align="right">Email</td>
-      <td width="28%"><input name="email" type="text" id="email" val="" required="required"/></td>
+      <td width="28%"><input name="email" type="email" id="email" val="" required="required"/></td>
     </tr>
     
     <tr>

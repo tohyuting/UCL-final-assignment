@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $("#addressText").load("php_files/getPreviousDetails.php");
+    // get previous details of first and last name entered
+    $("#addressText").load("php_files/getPreviousDetails.php");
     
-    $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
     showOn: "button",
@@ -15,6 +15,7 @@ $(document).ready(function(){
     altField: "#newdate"
     });
 
+    //validate user form to ensure fields are not empty
     $("#userForm").validate({
         rules: {
           firstName: "required",
@@ -31,6 +32,9 @@ $(document).ready(function(){
             newdate: "Required"
         }, 
           submitHandler: function(form) {
+            // successful submission sends the data on the form to be stored
+            // as session variables. Set the local storage clicked to be true
+            // so that address form will be showed.
             localStorage.setItem("clicked", "true");
             var firstName = $('#firstName').val();
 
@@ -76,6 +80,9 @@ $(document).ready(function(){
         });
     });
 
+    // this allows users to manually type in their date of birth or to 
+    // change the date after selecting in the calender while updating the age
+    // field automatically
     $("#newdate").change(function(){
       var getBirth = $(this).val();
 
@@ -90,6 +97,8 @@ $(document).ready(function(){
       });
   });
 
+  // clears all session variable stored, set clicked to false so that
+  // the address form would be hidden
   $("#reset").click(function(){
     localStorage.setItem("clicked", "false");
     $.ajax({
@@ -102,7 +111,7 @@ $(document).ready(function(){
     });
 
   });
-
+    // validating address form
     $("#addressForm").validate({
         rules: {
           house_numberName: "required",

@@ -5,6 +5,9 @@ $(document).ready(function(){
 	$("#moreInfo").click(function(){
 		location.href= 'about.php';
 	});
+
+	// links to check user, by checking if there is any current user ID
+	// in the session variable that could be used
 	$("#payAdventure").click(function(){
 		$.ajax({
 			url: 'https://localhost/final_assignment/php_files/checkUser.php',

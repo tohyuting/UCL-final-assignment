@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $(".navBack").click(function() { location.href = 'index.php' });
     $("#date").hide();	
     $("#date").datepicker({
     showOn: "button",
@@ -13,6 +12,7 @@ $(document).ready(function(){
     altField: "#dob"
     });
 
+    //validate form
     $("#getDetailsForm").validate({
         rules: {
           firstName: "required",
@@ -25,9 +25,6 @@ $(document).ready(function(){
             dob: "Required"
         }     
       });
-
-
-
 });
 
 

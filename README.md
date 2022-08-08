@@ -1,5 +1,5 @@
 # Website for UCL Summer School Final Assignment
-This is the code for the website that is created for the final assignment as part of UCL Summer School module on **Data Driven Web-based Applications**. A duration of 3-4 days was given to complete the assignment.
+This is the code for the website that is created for the final assignment as part of UCL Summer School module on **Data Driven Web-based Applications**. A duration of 3-4 days was given to complete the assignment. For this assignment, I had framed the context of the website to cater to users who would like to book a day tour with the day tour company.
 
 Programming languages used to build the website: `HTML`, `CSS`, `JQuery`, `PHP` and `MySQL`.
 
